@@ -16,7 +16,9 @@
 	$products['Toaster']=75;
 
 	foreach($products as ".$key." =>$value){
-		echo "<p>The ".$key." costs ".$value."</p>";
+		if($value <= $credit) {
+			echo "<p>".$key."<p>";
+		}
 	}
 
     ?>
